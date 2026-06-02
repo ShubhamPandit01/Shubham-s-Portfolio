@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Shubham's Portfolio</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav id="header-nav">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#tecnical-skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hey, I'm <span>Shubham </span><br>Pandit from Delhi NCR</h1>
+            </div>
+
+            <div id="header-icons-cv">
+                <div id="icons">
+                    <a href="https://www.instagram.com/official_shubhampandit_/" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shubhampandit01/" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ShubhamPandit01" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.link/fajowv" ><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="img/Resume.pdf" download id="cv-btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnical-skills">
+        <h1>&lt;/&gt Technical <span>Skills</span></h1>
+        <div id="all-skills">
+            <h2>Languages 
+                <span id="closelanguage"onclick="closetab('language')"><i class="fa-solid fa-chevron-down"></i></span>
+            </h2>
+
+            <div class="skills-div" id="language">
+                <div class="skill">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+            <h2>Frontend
+                <span id="closefrontend" onclick="closetab('frontend')"><i class="fa-solid fa-chevron-down"></i></span>
+            </h2>
+            <div class="skills-div" id="frontend">
+                <div class="skill">
+                    <i class="devicon-react-original colored"></i>
+                    <h3>React.js</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-redux-original colored"></i>
+                    <h3>Redux Toolkit</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <h3>Tailwind CSS</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-reactrouter-plain colored"></i>
+                    <h3>React Router</h3>
+                </div>
+            </div>
+            <h2>Tools
+                <span id="closetools" onclick="closetab('tools')"><i class="fa-solid fa-chevron-down"></i></span>
+            </h2>
+            <div class="skills-div" id="tools">
+                <div class="skill">
+                    <i class="devicon-git-plain colored"></i>
+                    <h3>Git</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-github-original"></i>
+                    <h3>GitHub</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <h3>VS Code</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-postman-plain colored"></i>
+                    <h3>Postman</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-vercel-original"></i>
+                    <h3>Vercel</h3>
+                </div>
+            </div> 
+            <h2>Backend/services
+                <span id="closebackend" onclick="closetab('backend')"><i class="fa-solid fa-chevron-down"></i></span>
+            </h2>
+            <div class="skills-div" id="backend">
+                <div class="skill">
+                    <i class="devicon-fastapi-plain colored"></i>
+                    <h3>REST APIs</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-firebase-plain colored"></i>
+                    <h3>Authentication</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-json-plain colored"></i>
+                    <h3>Local Storage</h3>
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-tittle">My <span>Projects</span></h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/project1.jpg">
+                    <div class="layer">
+                        <h3>Shoppic – E-Commerce Platform</h3>
+                        <p>Responsive online shopping website with cart and product features.</p>
+                        <a href="https://shoppic.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project2.jpg">
+                    <div class="layer">
+                        <h3>Valoura – Fashion E-Com Website</h3>
+                        <p>Modern fashion store website with stylish and responsive design.</p>
+                        <a href="https://valoura.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project3.jpg">
+                    <div class="layer">
+                        <h3>FitZone – Fitness & Gym Website</h3>
+                        <p>Responsive gym website showcasing fitness programs and services.</p>
+                        <a href="https://fit-zone-five.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span> </h1>
+                    <p><br>Frontend Web Developer and fresher with strong knowledge of HTML, CSS, JavaScript, React.js, Redux Toolkit,
+                        and Tailwind CSS. Skilled in building responsive and user-friendly web applications with clean and reusable code.
+                        Developed multiple real-world frontend projects including e-commerce and fitness platforms using React and
+                        REST APIs. Passionate about learning modern web technologies and contributing to dynamic development teams.
+                    </p>
+
+                    <div class="tab-tittle">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('certification')">Certifications</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Responsive Web Design</span><br>Developing websites that work seamlessly across all devices</li>
+                            <li><span>Interactive User Experiences</span><br>Building dynamic and engaging frontend interfaces</li>
+                            <li><span>Performance & Accessibility</span><br>Optimizing websites for speed, usability, and accessibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Building responsive and interactive websites</li>
+                            <li><span>Personal Projects</span><br>Developed E-commerce, Portfolio, and Fitness web applications</li>
+                            <li><span>Problem Solving</span><br>Continuously improving coding and development skills</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2021</span><br>Bachelor of Business Administration (BBA)</li>
+                            <li>Maharshi Dayanand University, Rohtak</li>
+                            
+                            <li><span>2024 - 2025</span><br>Full Stack Web Development Course</li>
+                            <li>AccioJob</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>•</span> Completed Frontend Web Development training from AccioJob.</li>
+                            <li><span>•</span> Built 10+ responsive web projects using React.js, Tailwind CSS, and JavaScript.</li>
+                            <li><span>•</span> Integrated REST APIs and implemented state management with Redux Toolkit.</li>
+                            <li><span>•</span> Deployed and maintained projects using Git, GitHub, Vercel, and Postman.</li>
+                            <li><span>•</span> Solved 500+ coding challenges to improve data structures, algorithms, and problem-solving skills.</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Shubhampandit75572@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8802389087</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/official_shubhampandit_/" ><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shubhampandit01/" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ShubhamPandit01" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.link/fajowv" ><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>@All rights reserved. Made with ❤️ by SHUBHAM PANDIT</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx0XAsQ4M-9au687JDOYue1LvKYMrgkF5hcBcT60b5tM7kxL4S_OrhqgUWury8ylRnf/exec'
+        const form = document.forms['submit-to-google']
+        const msg= document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(()=>{
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
