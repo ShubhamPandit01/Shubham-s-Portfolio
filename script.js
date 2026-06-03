@@ -11,6 +11,11 @@ let closefrontend = document.getElementById('closefrontend')
 let closetools = document.getElementById('closetools')
 let closebackend = document.getElementById('closebackend')
 
+// Skills section tab
+
+let bar = document.getElementById('bar')
+let nav = document.getElementById('nav-element')
+let close = document.getElementById('close')
 
 
 // About section tab function
@@ -41,4 +46,19 @@ function closetab(name){
         document.getElementById(name).classList.remove(`active`)
     }
 
+}
+
+
+// Skills section tab function
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active')
+    })
+}
+
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active')
+    })
 }
