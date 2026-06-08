@@ -1,21 +1,39 @@
 
-// About section tab
+// c-v button action
 
+let cvbtn = document.getElementById('cv-btn')
+
+// About section tab
 let tablinks = document.getElementsByClassName('tab-links')
 let tabcontents = document.getElementsByClassName('tab-contents')
 
 // Skills section tab
-
 let language = document.getElementById('language')
 let closefrontend = document.getElementById('closefrontend')
 let closetools = document.getElementById('closetools')
 let closebackend = document.getElementById('closebackend')
 
-// Skills section tab
-
+// menu open and close tab
 let bar = document.getElementById('bar')
 let nav = document.getElementById('nav-element')
 let close = document.getElementById('close')
+let navElements = document.querySelectorAll('.menu')
+
+// pagetop button hide or show tab
+let pagetop = document.getElementById('pagetop')
+
+
+// header styling tab
+let header= document.getElementById('header-nav')
+
+// -------------------------------------------------------------------------------------------------------------------
+
+
+// c-v button action
+
+cvbtn.addEventListener('click',()=>{
+    cvbtn.classList.toggle('active')
+})
 
 
 // About section tab function
@@ -49,7 +67,7 @@ function closetab(name){
 }
 
 
-// Skills section tab function
+// menu open and close tab
 
 if(bar){
     bar.addEventListener('click',()=>{
@@ -62,3 +80,34 @@ if(close){
         nav.classList.remove('active')
     })
 }
+
+navElements.forEach((element)=>element.addEventListener('click',(e)=>{
+    nav.classList.remove('active')
+}))
+
+
+
+// Window Behaviour
+
+window.addEventListener('scroll',()=>{
+
+    // pagetop button hide or show tab
+    if(window.scrollY > window.innerHeight){
+        pagetop.classList.add('show')
+    }else pagetop.classList.remove('show')
+
+    // header styling tab
+    if(window.scrollY > window.innerHeight*0.2){
+        header.classList.add('active')
+    }else header.classList.remove('active')
+
+})
+
+
+pagetop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
