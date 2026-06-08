@@ -95,18 +95,13 @@ window.addEventListener('scroll',()=>{
         pagetop.classList.add('show')
     }else pagetop.classList.remove('show')
 
-})
-
-function handleHeader() {
-    if(window.scrollY > window.innerHeight * 0.2){
+    
+    // header styling tab
+    if(window.scrollY > window.innerHeight*0.2){
         header.classList.add('active')
-    } else {
-        header.classList.remove('active')
-    }
-}
+    }else header.classList.remove('active')
 
-window.addEventListener('scroll', handleHeader);
-window.addEventListener('load', handleHeader);
+})
 
 pagetop.addEventListener("click", () => {
     window.scrollTo({
